@@ -413,5 +413,9 @@ var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isInters
 document.querySelectorAll('.rv').forEach(function(el){obs.observe(el)});
 document.querySelectorAll('.steps,.lw-grid,.tips,.eq-list,.ct-cards').forEach(function(g){Array.from(g.children).forEach(function(c,i){if(c.classList.contains('rv'))c.style.transitionDelay=i*0.08+'s'})});
 </script>
+<script>
+window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>
